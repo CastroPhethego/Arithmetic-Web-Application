@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Numbers Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h2>Enter your numbers</h2>
+        
+        <br><!-- comment -->
+        
+        <form action="ArithmeticServlet.do" method="POST">
+            <table>
+                <tr>
+                    <td>
+                        1st Number: 
+                        <input type="text" name="num1" value="" size="6" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        2nd Number: 
+                        <input type="text" name="num2" value="" size="6" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="sign">
+                            <option value="+">+</option>
+                            <option value="-">-</option>
+                            <option value="/">/</option>
+                            <option value="*">*</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="SUBMIT" name="submit" />
+                    </td>
+                </tr>
+                
+            </table>
+        </form>
+    </body>
+</html>
